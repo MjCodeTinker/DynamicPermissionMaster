@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation rootProject.ext.supportFragment
+}
+
+//添加
+publish {
+    userOrg = 'mjcodetinker'//userName
+    groupId = 'com.mj'//jCenter path
+    artifactId = 'dynamicpermission'//project name
+    publishVersion = '1.0.0'//version
+    desc = 'first version~'//description
+    website = 'https://github.com/MjCodeTinker/DynamicPermissionMaster'//website
+}
