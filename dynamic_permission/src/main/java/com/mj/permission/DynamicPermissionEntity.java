@@ -2,8 +2,8 @@ package com.mj.permission;
 
 /**
  * Author      : MJ
- * Date        : 2018/10/11--19:16
- * Email       : miaojian@conew.com
+ * Date        : 2018/12/4/15:30
+ * Email       : miaojian_666@126.com
  * Description : 权限的实体类
  */
 
