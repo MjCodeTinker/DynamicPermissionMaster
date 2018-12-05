@@ -4,8 +4,7 @@
 ### gradle
 
 ```java
- compile 'com.mj:dynamicpermission:1.0.0' 或
- implementation 'com.mj:dynamicpermission:1.0.0'
+ compile 'com.mj:dynamicpermission:1.0.0'  或   implementation 'com.mj:dynamicpermission:1.0.0'
 ```
 
 > 使用
@@ -13,7 +12,7 @@
 ```java
 private DynamicPermissionEmitter permissionEmitter = new DynamicPermissionEmitter(this);
 ```
--- this指: FragmentActivity 或 v4包下的 Fragment
+> this指: FragmentActivity 或 v4包下的 Fragment
 
 ```java
 
