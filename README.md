@@ -1,10 +1,12 @@
 # DynamicPermissionMaster
-动态权限框架
+Android 6.0 动态权限申请与处理 解耦在Activity 或 Fragment中处理 onRequestPermissionsResult 回调
 
 ### gradle
 
 ```java
+dependencies {
  compile 'com.mj:dynamicpermission:1.0.0'  或   implementation 'com.mj:dynamicpermission:1.0.0'
+}
 ```
 
 > 使用
