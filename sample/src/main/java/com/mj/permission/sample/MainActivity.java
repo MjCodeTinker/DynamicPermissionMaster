@@ -30,7 +30,7 @@ public class MainActivity extends FragmentActivity {
                         DynamicPermissionEntity dynamicPermissionEntity = permissionEntityMap.get(Manifest.permission.WRITE_EXTERNAL_STORAGE);
                         if (dynamicPermissionEntity.isGranted()) {
                             Toast.makeText(MainActivity.this, "允许，可以搞事情了", Toast.LENGTH_LONG).show();
-                        } else if (dynamicPermissionEntity.shouldShowRequestPermissionRationable()) {
+                        } else if (dynamicPermissionEntity.shouldShowRequestPermissionRational()) {
                             Toast.makeText(MainActivity.this, "勾选不在提示，且拒绝", Toast.LENGTH_LONG).show();
                         } else {
                             Toast.makeText(MainActivity.this, "残忍拒绝", Toast.LENGTH_LONG).show();

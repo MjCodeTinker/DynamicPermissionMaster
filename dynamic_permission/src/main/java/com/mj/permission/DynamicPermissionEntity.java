@@ -54,7 +54,7 @@ public final class DynamicPermissionEntity {
      *
      * @return 是否应该给用户一个友好的提示
      */
-    public boolean shouldShowRequestPermissionRationable() {
+    public boolean shouldShowRequestPermissionRational() {
         return permissionState == PERMISSION_DENIED_AND_SELECTED_NO_PROMPT;
     }
 
